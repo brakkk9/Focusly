@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Focusly - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+  </head>
+  <body>
+    <nav id="header">
+      <a href="../index.html" class="logo">Focus<span>ly</span></a>
+      <ul id="nav-menu">
+        <li><a href="../index.html#features">Features</a></li>
+        <li><a href="dashboard.html" style="color:var(--teal)">Dashboard</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <button class="nav-btn" onclick="window.location.href='pricing.html'">Start Free</button>
+      </div>
+    </nav>
+    <div class="page-hero">
+      <div>
+        <h1>Good morning, Bohdan</h1>
+        <p>Here is what is on your plate today - Tuesday, March 25, 2026</p>
+      </div>
+    </div>
+    <div class="dash-body">
+      <div class="stats-row reveal">
+        <div class="stat-card">
+          <div class="stat-card-label">Tasks Today</div>
+          <div class="stat-card-value">8</div>
+          <div class="prog-bar-wrap">
+            <div class="prog-bar-top">
+              <span>3 done</span>
+              <span>38%</span>
+            </div>
+            <div class="prog-bar-bg">
+              <div class="prog-bar-fill" style="width:38%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-label">This Week</div>
+          <div class="stat-card-value">24</div>
+          <div class="stat-card-trend">72% completion rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-label">Overdue</div>
+          <div class="stat-card-value">2</div>
+          <div class="stat-card-trend down">Needs attention</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-label">Team Members</div>
+          <div class="stat-card-value">5</div>
+          <div class="stat-card-trend">2 active now</div>
+        </div>
+      </div>
+      <div class="dash-main reveal">
+        <div class="dash-card">
+          <h3>Today's Tasks</h3>
+          <div class="dash-task">
+            <div class="dash-check done"></div>
+            <span class="dash-task-text done">Review project brief</span>
+            <span class="dash-tag tag-work">Work</span>
+            <span class="task-due">9:00</span>
+          </div>
+          <div class="dash-task">
+            <div class="dash-check done"></div>
+            <span class="dash-task-text done">Send weekly report</span>
+            <span class="dash-tag tag-work">Work</span>
+            <span class="task-due">10:00</span>
+          </div>
+          <div class="dash-task">
+            <div class="dash-check done"></div>
+            <span class="dash-task-text done">Morning standup</span>
+            <span class="dash-tag tag-work">Work</span>
+            <span class="task-due">10:30</span>
+          </div>
+          <div class="dash-task">
+            <div class="dash-check"></div>
+            <span class="dash-task-text">Design mockup v2</span>
+            <span class="dash-tag tag-urgent">Urgent</span>
+            <span class="task-due">14:00</span>
+          </div>
+          <div class="dash-task">
+            <div class="dash-check"></div>
+            <span class="dash-task-text">Update documentation</span>
+            <span class="dash-tag tag-work">Work</span>
+            <span class="task-due">15:00</span>
+          </div>
+          <div class="dash-task">
+            <div class="dash-check"></div>
+            <span class="dash-task-text">Call with client</span>
+            <span class="dash-tag tag-urgent">Urgent</span>
+            <span class="task-due">16:00</span>
+          </div>
+          <div class="dash-task">
+            <div class="dash-check"></div>
+            <span class="dash-task-text">Grocery shopping</span>
+            <span class="dash-tag tag-personal">Personal</span>
+            <span class="task-due">18:00</span>
+          </div>
+          <div class="dash-task">
+            <div class="dash-check"></div>
+            <span class="dash-task-text">Read for 30 minutes</span>
+            <span class="dash-tag tag-personal">Personal</span>
+            <span class="task-due">21:00</span>
+          </div>
+        </div>
+        <div class="dash-card">
+          <h3>Recent Activity</h3>
+          <div class="activity-item">
+            <div class="activity-dot" style="background:var(--teal)"></div>
+            <div>
+              <div class="activity-text">You completed "Review project brief"</div>
+              <div class="activity-time">2 min ago</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot" style="background:var(--teal)"></div>
+            <div>
+              <div class="activity-text">Sofia assigned "Call with client"</div>
+              <div class="activity-time">18 min ago</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot" style="background:var(--teal)"></div>
+            <div>
+              <div class="activity-text">You completed "Send weekly report"</div>
+              <div class="activity-time">1 hr ago</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot" style="background:var(--yellow)"></div>
+            <div>
+              <div class="activity-text">Reminder: "Design mockup v2" due today</div>
+              <div class="activity-time">3 hr ago</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot" style="background:#E05252"></div>
+            <div>
+              <div class="activity-text">"Landing page copy" is overdue</div>
+              <div class="activity-time">Yesterday</div>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-dot" style="background:var(--teal)"></div>
+            <div>
+              <div class="activity-text">James commented on "Mobile App" project</div>
+              <div class="activity-time">Yesterday</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dash-bottom reveal reveal-delay-1">
+        <div class="dash-card">
+          <h3>Team Overview</h3>
+          <div class="team-row">
+            <div class="team-avatar-sm" style="background:#264653">BK</div>
+            <div class="team-info">
+              <div class="team-name-sm">Bohdan Rak</div>
+              <div class="team-tasks-sm">8 tasks today</div>
+            </div>
+            <div class="online-dot" style="background:#28C840"></div>
+          </div>
+          <div class="team-row">
+            <div class="team-avatar-sm" style="background:#2A9D8F">SR</div>
+            <div class="team-info">
+              <div class="team-name-sm">Sofia Reyes</div>
+              <div class="team-tasks-sm">5 tasks today</div>
+            </div>
+            <div class="online-dot" style="background:#28C840"></div>
+          </div>
+          <div class="team-row">
+            <div class="team-avatar-sm" style="background:#E9C46A;color:#1B1B2F">TK</div>
+            <div class="team-info">
+              <div class="team-name-sm">Tom Keller</div>
+              <div class="team-tasks-sm">3 tasks today</div>
+            </div>
+            <div class="online-dot" style="background:#9CA3AF"></div>
+          </div>
+          <div class="team-row">
+            <div class="team-avatar-sm" style="background:#264653">JM</div>
+            <div class="team-info">
+              <div class="team-name-sm">Jamie Mitchell</div>
+              <div class="team-tasks-sm">6 tasks today</div>
+            </div>
+            <div class="online-dot" style="background:#9CA3AF"></div>
+          </div>
+          <div class="team-row">
+            <div class="team-avatar-sm" style="background:#2A9D8F">MR</div>
+            <div class="team-info">
+              <div class="team-name-sm">Maria Ruiz</div>
+              <div class="team-tasks-sm">4 tasks today</div>
+            </div>
+            <div class="online-dot" style="background:#9CA3AF"></div>
+          </div>
+        </div>
+        <div class="dash-card">
+          <h3>Projects</h3>
+          <div class="project-row">
+            <div class="project-color" style="background:#2A9D8F"></div>
+            <div class="project-name">Website Redesign</div>
+            <div class="project-count">12 tasks</div>
+            <div class="project-prog">
+              <div class="project-prog-fill" style="width:75%;background:#2A9D8F"></div>
+            </div>
+          </div>
+          <div class="project-row">
+            <div class="project-color" style="background:#E9C46A"></div>
+            <div class="project-name">Mobile App</div>
+            <div class="project-count">8 tasks</div>
+            <div class="project-prog">
+              <div class="project-prog-fill" style="width:40%;background:#E9C46A"></div>
+            </div>
+          </div>
+          <div class="project-row">
+            <div class="project-color" style="background:#264653"></div>
+            <div class="project-name">Q2 Marketing</div>
+            <div class="project-count">6 tasks</div>
+            <div class="project-prog">
+              <div class="project-prog-fill" style="width:60%;background:#264653"></div>
+            </div>
+          </div>
+          <div class="project-row">
+            <div class="project-color" style="background:#E05252"></div>
+            <div class="project-name">Client Portal</div>
+            <div class="project-count">15 tasks</div>
+            <div class="project-prog">
+              <div class="project-prog-fill" style="width:20%;background:#E05252"></div>
+            </div>
+          </div>
+          <div class="project-row">
+            <div class="project-color" style="background:#9CA3AF"></div>
+            <div class="project-name">Internal Docs</div>
+            <div class="project-count">4 tasks</div>
+            <div class="project-prog">
+              <div class="project-prog-fill" style="width:90%;background:#9CA3AF"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="../scripts/nav.js" defer></script>
+  <script src="../scripts/reveal.js" defer></script>
+  <script src="../scripts/interactions.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focusly — Simple Task Manager for Teams | Get More Done</title>
+  <meta name="description" content="Focusly is a simple, distraction-free task manager for individuals and teams. Organize tasks, track progress, and collaborate in real time. Start free today.">
+  <meta name="keywords" content="task manager, productivity app, team collaboration, to-do list, project management, task tracking, remote work tools, focus app">
+  <meta name="author" content="Focusly">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Focusly — Simple Task Manager for Teams">
+  <meta property="og:description" content="Organize tasks, track progress, and collaborate in real time. No clutter, no distractions — just results.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://focusly.app">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+<header>
+  <nav id="header">
+    <a href="index.html" class="logo">Focus<span>ly</span></a>
+    <ul id="nav-menu">
+      <li><a href="#features">Features</a></li>
+      <li><a href="pages/dashboard.html">Dashboard</a></li>
+      <li><a href="pages/pricing.html">Pricing</a></li>
+      <li><a href="pages/about.html">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <button class="nav-btn" onclick="window.location.href='pages/pricing.html'">Start Free</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="hero">
+  <div class="hero-text">
+    <h1>Stay focused,<br><span>get things done</span></h1>
+    <p>Focusly is the simple task manager that helps individuals and teams stay on top of their work. No clutter, no distractions — just results.</p>
+    <div class="hero-btns">
+      <button class="btn-main" onclick="window.location.href='pages/pricing.html'">Get Started Free</button>
+      <button class="btn-outline" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">How it works</button>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="mock">
+      <div class="mock-bar">
+        <span style="background:#FF5F57"></span>
+        <span style="background:#FEBC2E"></span>
+        <span style="background:#28C840"></span>
+      </div>
+      <div class="mock-title">Today's Tasks</div>
+      <div class="task-item"><div class="check done"></div><span class="task-text-done">Review project brief</span></div>
+      <div class="task-item"><div class="check done"></div><span class="task-text-done">Send weekly report</span></div>
+      <div class="task-item"><div class="check"></div><span>Design mockup v2</span></div>
+      <div class="task-item"><div class="check"></div><span>Team standup call</span></div>
+      <div class="task-item"><div class="check"></div><span>Update documentation</span></div>
+      <div class="mock-progress">
+        <div class="progress-bar-bg"><div class="progress-bar-fill"></div></div>
+        <div class="progress-label">2 of 5 tasks completed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-bar">
+  <div class="stat reveal">
+    <span class="stat-number" data-target="50" data-suffix="k+">0</span>
+    <div class="stat-label">Active users</div>
+  </div>
+  <div class="stat reveal reveal-delay-1">
+    <span class="stat-number" data-target="98" data-suffix="%+">0</span>
+    <div class="stat-label">Customer satisfaction</div>
+  </div>
+  <div class="stat reveal reveal-delay-2">
+    <span class="stat-number" data-target="4" data-suffix="+">0</span>
+    <div class="stat-label">Platforms supported</div>
+  </div>
+  <div class="stat reveal reveal-delay-3">
+    <span class="stat-number" data-target="12" data-suffix=" min">0</span>
+    <div class="stat-label">Average setup time</div>
+  </div>
+</div>
+
+<section class="features" id="features">
+  <div class="section-header reveal">
+    <h2>Everything you need to stay organized</h2>
+    <p>Simple tools that actually help you get work done.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card reveal reveal-delay-1">
+      <div class="feature-icon-box"><img src="icons/tasks.svg" width="20" height="20" alt="Checklist icon representing task management"></div>
+      <div class="feature-label">Tasks</div>
+      <h3>Task Management</h3>
+      <p>Create, organize, and prioritize tasks with an intuitive interface. Never miss a deadline again.</p>
+    </div>
+    <div class="feature-card reveal reveal-delay-2">
+      <div class="feature-icon-box"><img src="icons/insights.svg" width="20" height="20" alt="Bar chart icon representing progress tracking"></div>
+      <div class="feature-label">Insights</div>
+      <h3>Progress Tracking</h3>
+      <p>See your weekly and monthly progress at a glance. Stay motivated with visual charts and completion stats.</p>
+    </div>
+    <div class="feature-card reveal reveal-delay-3">
+      <div class="feature-icon-box"><img src="icons/team.svg" width="20" height="20" alt="People icon representing team collaboration"></div>
+      <div class="feature-label">Team</div>
+      <h3>Collaboration</h3>
+      <p>Assign tasks, leave comments, and work together in real time. Keep everyone on the same page, always.</p>
+    </div>
+    <div class="feature-card reveal reveal-delay-1">
+      <div class="feature-icon-box"><img src="icons/alerts.svg" width="20" height="20" alt="Bell icon representing smart reminders"></div>
+      <div class="feature-label">Alerts</div>
+      <h3>Smart Reminders</h3>
+      <p>Get notified at the right time. Focusly learns your schedule and sends reminders when they're useful.</p>
+    </div>
+    <div class="feature-card reveal reveal-delay-2">
+      <div class="feature-icon-box"><img src="icons/sync.svg" width="20" height="20" alt="Phone icon representing cross-device sync"></div>
+      <div class="feature-label">Sync</div>
+      <h3>Works Everywhere</h3>
+      <p>Available on web, iOS, and Android. Your tasks sync instantly across all your devices.</p>
+    </div>
+    <div class="feature-card reveal reveal-delay-3">
+      <div class="feature-icon-box"><img src="icons/security.svg" width="20" height="20" alt="Lock icon representing data privacy"></div>
+      <div class="feature-label">Security</div>
+      <h3>Private and Secure</h3>
+      <p>Your data is encrypted end-to-end. We never sell your information to third parties.</p>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="section-header reveal">
+    <h2>Up and running in minutes</h2>
+    <p>No setup headaches. Just sign up and start getting things done.</p>
+  </div>
+  <div class="steps">
+    <div class="step reveal reveal-delay-1">
+      <div class="step-num">1</div>
+      <h4>Create your account</h4>
+      <p>Sign up free in under 30 seconds. No credit card required.</p>
+    </div>
+    <div class="step reveal reveal-delay-2">
+      <div class="step-num">2</div>
+      <h4>Add your tasks</h4>
+      <p>Type in your tasks, set due dates, and assign priorities.</p>
+    </div>
+    <div class="step reveal reveal-delay-3">
+      <div class="step-num">3</div>
+      <h4>Invite your team</h4>
+      <p>Bring your teammates on board and start collaborating.</p>
+    </div>
+    <div class="step reveal reveal-delay-4">
+      <div class="step-num">4</div>
+      <h4>Get things done</h4>
+      <p>Track progress, hit deadlines, and celebrate wins together.</p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="section-header reveal">
+    <h2>What our users say</h2>
+    <p>Trusted by over 50,000 individuals and teams worldwide.</p>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal reveal-delay-1">
+      <div>
+        <div class="stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+        <blockquote>"I've tried dozens of task managers and Focusly is the first one I've actually stuck with. It's clean, fast, and doesn't get in the way."</blockquote>
+      </div>
+      <div class="testi-author">
+        <div class="avatar" style="background:#264653">JM</div>
+        <div><div class="author-name">Jamie Mitchell</div><div class="author-role">Product Designer</div></div>
+      </div>
+    </div>
+    <div class="testi-card reveal reveal-delay-2">
+      <div>
+        <div class="stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+        <blockquote>"Our whole team switched to Focusly and we immediately saw an improvement in how we communicate about tasks. Highly recommended."</blockquote>
+      </div>
+      <div class="testi-author">
+        <div class="avatar" style="background:#2A9D8F">SR</div>
+        <div><div class="author-name">Sofia Reyes</div><div class="author-role">Engineering Manager</div></div>
+      </div>
+    </div>
+    <div class="testi-card reveal reveal-delay-3">
+      <div>
+        <div class="stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></div>
+        <blockquote>"Finally a tool that doesn't overwhelm you with features. The simplicity is what makes it so effective for daily use."</blockquote>
+      </div>
+      <div class="testi-author">
+        <div class="avatar" style="background:#E9C46A;color:#1B1B2F">TK</div>
+        <div><div class="author-name">Tom Keller</div><div class="author-role">Freelance Writer</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="cta-inner reveal">
+    <h2>Ready to get more done?</h2>
+    <p>Join over 50,000 people who use Focusly to organize their work and hit their goals every week.</p>
+    <button class="cta-btn" onclick="window.location.href='pages/pricing.html'">See Plans</button>
+    <p class="cta-note">Free plan available · Premium from $8/month</p>
+  </div>
+</section>
+
+</main>
+
+<script src="scripts/nav.js" defer></script>
+<script src="scripts/reveal.js" defer></script>
+<script src="scripts/counter.js" defer></script>
+<script src="scripts/typewriter.js" defer></script>
+<script src="scripts/interactions.js" defer></script>
+
+</body>
+</html>

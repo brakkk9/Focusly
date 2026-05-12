@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Focusly - Pricing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/pricing.css">
+</head>
+<body>
+
+<nav id="header">
+  <a href="../index.html" class="logo">Focus<span>ly</span></a>
+  <ul id="nav-menu">
+    <li><a href="../index.html#features">Features</a></li>
+    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="pricing.html" style="color:var(--teal)">Pricing</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <h1>Simple, honest pricing</h1>
+    <p>Start free. Upgrade when you need more. No hidden fees, no surprises.</p>
+  </div>
+</div>
+
+<div class="pricing-body">
+
+  <div class="billing-label">
+    <span class="billing-pill active">Monthly</span>
+    <span class="billing-pill">Yearly</span>
+  </div>
+
+  <div class="pricing-grid reveal">
+
+    <div class="pricing-card">
+      <div class="plan-name">Free</div>
+      <div class="plan-price" id="price-free">$0 <span>/ month</span></div>
+      <div class="plan-desc">Perfect for individuals just getting started.</div>
+      <div class="plan-divider"></div>
+      <ul class="plan-features">
+        <li><span class="check-icon"></span>Up to 20 tasks</li>
+        <li><span class="check-icon"></span>1 project</li>
+        <li><span class="check-icon"></span>Basic reminders</li>
+        <li><span class="check-icon"></span>Mobile app</li>
+        <li class="off"><span class="check-icon"></span>Team collaboration</li>
+        <li class="off"><span class="check-icon"></span>Analytics</li>
+        <li class="off"><span class="check-icon"></span>Priority support</li>
+      </ul>
+      <button class="plan-btn" data-plan="Free" onclick="openModal(this)">Get Started</button>
+    </div>
+
+    <div class="pricing-card popular">
+      <div class="popular-badge">Most Popular</div>
+      <div class="plan-name">Pro</div>
+      <div class="plan-price" id="price-pro">$8 <span>/ month</span></div>
+      <div class="plan-desc">Everything you need to stay consistently productive.</div>
+      <div class="plan-divider"></div>
+      <ul class="plan-features">
+        <li><span class="check-icon"></span>Unlimited tasks</li>
+        <li><span class="check-icon"></span>Unlimited projects</li>
+        <li><span class="check-icon"></span>Smart reminders</li>
+        <li><span class="check-icon"></span>Mobile app</li>
+        <li><span class="check-icon"></span>Team collaboration (up to 5)</li>
+        <li><span class="check-icon"></span>Basic analytics</li>
+        <li class="off"><span class="check-icon"></span>Priority support</li>
+      </ul>
+      <button class="plan-btn primary" data-plan="Pro" onclick="openModal(this)">Get Started</button>
+    </div>
+
+    <div class="pricing-card">
+      <div class="plan-name">Business</div>
+      <div class="plan-price" id="price-biz">$20 <span>/ month</span></div>
+      <div class="plan-desc">For teams that need advanced features and support.</div>
+      <div class="plan-divider"></div>
+      <ul class="plan-features">
+        <li><span class="check-icon"></span>Unlimited tasks</li>
+        <li><span class="check-icon"></span>Unlimited projects</li>
+        <li><span class="check-icon"></span>Smart reminders</li>
+        <li><span class="check-icon"></span>Mobile app</li>
+        <li><span class="check-icon"></span>Unlimited team members</li>
+        <li><span class="check-icon"></span>Advanced analytics</li>
+        <li><span class="check-icon"></span>Priority support</li>
+      </ul>
+      <button class="plan-btn" data-plan="Business" onclick="openModal(this)">Get Started</button>
+    </div>
+
+  </div>
+
+  <div class="compare reveal">
+    <h2>Full feature comparison</h2>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Free</th>
+          <th>Pro</th>
+          <th>Business</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Tasks</td><td>Up to 20</td><td>Unlimited</td><td>Unlimited</td></tr>
+        <tr><td>Projects</td><td>1</td><td>Unlimited</td><td>Unlimited</td></tr>
+        <tr><td>Team members</td><td class="cross">-</td><td>Up to 5</td><td>Unlimited</td></tr>
+        <tr><td>Mobile app</td><td class="tick">&#10003;</td><td class="tick">&#10003;</td><td class="tick">&#10003;</td></tr>
+        <tr><td>Smart reminders</td><td class="cross">-</td><td class="tick">&#10003;</td><td class="tick">&#10003;</td></tr>
+        <tr><td>Analytics</td><td class="cross">-</td><td>Basic</td><td>Advanced</td></tr>
+        <tr><td>API access</td><td class="cross">-</td><td class="cross">-</td><td class="tick">&#10003;</td></tr>
+        <tr><td>Priority support</td><td class="cross">-</td><td class="cross">-</td><td class="tick">&#10003;</td></tr>
+        <tr><td>Custom branding</td><td class="cross">-</td><td class="cross">-</td><td class="tick">&#10003;</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<div id="signup-overlay" style="display:none">
+  <div id="signup-modal">
+    <h2 id="modal-title">Get started with Free</h2>
+    <form id="signup-form">
+      <div class="form-group">
+        <label for="f-name">Full name</label>
+        <input type="text" id="f-name" placeholder="Bohdan Rak" required>
+      </div>
+      <div class="form-group">
+        <label for="f-email">Email</label>
+        <input type="email" id="f-email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="f-company">Company (optional)</label>
+        <input type="text" id="f-company" placeholder="Focusly Inc.">
+      </div>
+      <div class="form-group">
+        <label for="f-password">Password</label>
+        <input type="password" id="f-password" placeholder="At least 8 characters" required>
+      </div>
+      <button type="submit" class="btn-submit">Create account</button>
+      <button type="button" class="btn-cancel" onclick="closeModal()">Cancel</button>
+    </form>
+  </div>
+</div>
+
+  <script src="../scripts/form.js" defer></script>
+  <script src="../scripts/nav.js" defer></script>
+  <script src="../scripts/reveal.js" defer></script>
+  <script src="../scripts/interactions.js" defer></script>
+</body>
+</html>
